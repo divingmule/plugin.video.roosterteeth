@@ -18,7 +18,7 @@ import xbmcgui
 import xbmcaddon
 import xbmcvfs
 
-cache = StorageServer.StorageServer("roosterteeth", 1)
+cache = StorageServer.StorageServer("roosterteeth", 6)
 addon = xbmcaddon.Addon()
 addon_profile = xbmc.translatePath(addon.getAddonInfo('profile'))
 addon_version = addon.getAddonInfo('version')
@@ -37,7 +37,7 @@ def addon_log(string):
         log_message = string.encode('utf-8', 'ignore')
     except:
         log_message = 'addonException: addon_log'
-    xbmc.log("[%s-%s]: %s" %(addon_id, addon_version, log_message),level=xbmc.LOGNOTICE)
+    xbmc.log("[%s-%s]: %s" %(addon_id, addon_version, log_message),level=xbmc.LOGDEBUG)
 
 
 def notify(message):

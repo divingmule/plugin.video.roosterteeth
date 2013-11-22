@@ -1,3 +1,6 @@
+Version 0.0.6
+release to xbmc.org repository
+
 Version 0.0.5
 beta/testing release
 added initial support for sponsor only videos
